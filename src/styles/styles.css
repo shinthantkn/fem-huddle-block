@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.row__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  border-radius: 100vw;
+  box-shadow: 0.0625em 0.0625em 0.75em 0.125em hsl(190, 24%, 90%);
+  font-size: var(--body-fs);
+  font-family: var(--open-sans);
+  font-weight: 700;
+  transition: cursor 0.25s, background-color 0.25s, color 0.25s;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn__white {
+  background-color: var(--white);
+  color: var(--very-dark-cyan);
+}
+
+.btn__white:hover {
+  color: var(--grayish-blue);
+}
+
+.btn__pink {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.btn__pink:hover {
+  background-color: hsla(322, 100%, 66%, 0.742);
+}
+
+/* Navbar */
+
+#navbar,
+#intro {
+  background-color: hsl(191, 89%, 96%);
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.125em;
+}
+
+.btn__nav {
+  width: 13.125em;
+  height: 3.125em;
+}
+
+/* Intro Section */
+
+#intro {
+  padding: 0 3.125em 9.0625em 3.125em;
+}
+
+.intro__container {
+  margin-right: 5em;
+  padding-top: 5em;
+}
+
+.mockup {
+  width: 42.5em;
+  height: 30em;
+}
+
+.intro__heading {
+  color: var(--very-dark-cyan);
+  font-family: var(--poppins);
+  font-size: 2.5em;
+  width: 11em;
+  margin-bottom: 0.8em;
+}
+
+.intro__description {
+  color: var(--very-dark-cyan);
+  font-family: var(--open-sans);
+  font-size: var(--body-fs);
+  width: 32.5em;
+  margin-bottom: 1.875em;
+}
+
+.btn__intro {
+  width: 17.5em;
+  height: 3.4375em;
+}
+
+:root {
+  /* Primary Colors */
+  --pink: hsl(322, 100%, 66%);
+
+  /* Neutral Colors */
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Fonts & Sizes */
+  --poppins: "Poppins", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+  --body-fs: 1.125em;
+}
