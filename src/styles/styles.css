@@ -62,7 +62,7 @@ body {
 #navbar {
   display: flex;
   justify-content: space-between;
-  padding: 3.125em;
+  padding: 3.75em 5em 3.75em 5em;
 }
 
 .btn__nav {
@@ -73,11 +73,10 @@ body {
 /* Intro Section */
 
 #intro {
-  padding: 0 3.125em 9.0625em 3.125em;
+  padding: 0 5em 6em 5em;
 }
 
 .intro__container {
-  margin-right: 5em;
   padding-top: 5em;
 }
 
@@ -105,6 +104,73 @@ body {
 .btn__intro {
   width: 17.5em;
   height: 3.4375em;
+}
+
+/* Features Section */
+
+#features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10em;
+  padding-bottom: 21.875em;
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__container > * {
+  margin-bottom: 2.5em;
+}
+
+.features__container > *:last-child {
+  margin-bottom: 0;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75em;
+  height: 31.25em;
+  box-shadow: 0 0 0.3125em 0.3125em hsl(0, 0%, 97%);
+  border-radius: 20px;
+}
+
+.feature:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.feature__info {
+  margin-top: 1.25em;
+  margin-right: 6.25em;
+}
+
+.feature__title {
+  color: var(--very-dark-cyan);
+  font-family: var(--poppins);
+  font-size: 1.875em;
+  margin-bottom: 0.5em;
+}
+
+.feature:nth-of-type(even) .feature__info {
+  margin-right: 0;
+  margin-left: 6.25em;
+}
+
+.feature__description {
+  color: var(--grayish-blue);
+  font-family: var(--open-sans);
+  font-size: var(--body-fs);
+  line-height: 1.5;
+  width: 29em;
+}
+
+.feature__illustration {
+  width: 28.125em;
+  height: 20.3125em;
 }
 
 :root {
